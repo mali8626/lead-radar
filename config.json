@@ -31,6 +31,6 @@
   "min_score": 40,
   "max_age_hours": 72,
   "max_leads_kept": 1500,
-  "gemini_model": "gemini-2.5-flash",
+  "gemini_model": "gemini-3.8-flash",
   "ai_max_per_run": 25
 }
