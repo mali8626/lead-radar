@@ -1,0 +1,36 @@
+{
+  "reddit_subs": ["forhire", "hiring", "WordPress", "Elementor", "SEO", "smallbusiness", "entrepreneur"],
+  "rss_feeds": [
+    {"name": "We Work Remotely", "url": "https://weworkremotely.com/remote-jobs.rss"},
+    {"name": "We Work Remotely (Marketing)", "url": "https://weworkremotely.com/categories/remote-sales-and-marketing-jobs.rss"},
+    {"name": "We Work Remotely (Full-stack)", "url": "https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss"},
+    {"name": "We Work Remotely (Front-end)", "url": "https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss"}
+  ],
+  "google_alert_feeds": [],
+  "hn_queries": ["wordpress developer", "elementor", "SEO expert", "AEO", "GEO optimization"],
+  "include_keywords": [
+    "need wordpress", "need a wordpress", "wordpress developer", "wordpress expert", "wordpress freelancer",
+    "elementor", "need seo", "looking for seo", "seo expert", "seo specialist", "seo freelancer",
+    "ai seo", "aeo", "geo optimization", "generative engine", "answer engine",
+    "hire freelancer", "looking to hire", "need a developer", "need web developer", "website developer",
+    "page speed", "core web vitals", "website redesign", "fix my website", "woocommerce"
+  ],
+  "hiring_signals": [
+    "[hiring]", "hiring", "looking for", "need a", "need an", "need someone", "seeking", "wanted",
+    "budget", "paid", "per hour", "/hr", "contract", "freelancer", "who is hiring", "we are looking"
+  ],
+  "exclude_signals": [
+    "[for hire]", "for hire", "available for work", "available for hire", "i am a wordpress", "i'm a wordpress",
+    "my services", "hire me", "portfolio:", "offering my", "i offer", "we offer"
+  ],
+  "exclude_countries": [
+    "pakistan", "india", "sri lanka", "bangladesh", "nepal",
+    "karachi", "lahore", "islamabad", "mumbai", "delhi", "bangalore", "bengaluru", "hyderabad", "chennai",
+    "colombo", "dhaka", "kathmandu", "pkr", "inr", "lkr", "bdt", "npr", "rupee", "rupees"
+  ],
+  "min_score": 40,
+  "max_age_hours": 72,
+  "max_leads_kept": 1500,
+  "gemini_model": "gemini-2.5-flash",
+  "ai_max_per_run": 25
+}
