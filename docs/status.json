@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-25T13:05:00.681487+00:00",
+ "updated": "2026-10-25T13:21:06.530382+00:00",
  "sources": {
   "Reddit": {
    "ok": false,
    "count": 0,
-   "error": "Reddit refused requests (429); set REDDIT_CLIENT_ID/SECRET to use the official API"
+   "error": "HTTP Error 401: Unauthorized"
   },
   "RSS job boards": {
    "ok": true,
@@ -16,7 +16,7 @@
   },
   "Hacker News": {
    "ok": true,
-   "count": 162
+   "count": 165
   },
   "HN threads": {
    "ok": true,
