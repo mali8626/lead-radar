@@ -1,0 +1,31 @@
+{
+ "updated": "2026-10-25T12:35:03.254035+00:00",
+ "sources": {
+  "Reddit": {
+   "ok": false,
+   "count": 0,
+   "error": "Reddit refused requests (429); set REDDIT_CLIENT_ID/SECRET to use the official API"
+  },
+  "RSS job boards": {
+   "ok": true,
+   "count": 311
+  },
+  "RemoteOK": {
+   "ok": true,
+   "count": 99
+  },
+  "Hacker News": {
+   "ok": true,
+   "count": 165
+  },
+  "HN threads": {
+   "ok": true,
+   "count": 0
+  },
+  "Google Alerts": {
+   "ok": true,
+   "count": 0
+  }
+ },
+ "ai": false
+}
