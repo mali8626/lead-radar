@@ -6,7 +6,12 @@
     {"name": "We Work Remotely (Full-stack)", "url": "https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss"},
     {"name": "We Work Remotely (Front-end)", "url": "https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss"}
   ],
-  "google_alert_feeds": [],
+  "google_alert_feeds": [
+    "https://www.google.com/alerts/feeds/06885130374760020469/14537352275914624180",
+    "https://www.google.com/alerts/feeds/06885130374760020469/17765890563303078103",
+    "https://www.google.com/alerts/feeds/06885130374760020469/1673697455923090894",
+    "https://www.google.com/alerts/feeds/06885130374760020469/16406910018715071614"
+  ],
   "hn_queries": ["wordpress developer", "elementor", "SEO expert", "AEO", "GEO optimization"],
   "include_keywords": [
     "need wordpress", "need a wordpress", "wordpress developer", "wordpress expert", "wordpress freelancer",
