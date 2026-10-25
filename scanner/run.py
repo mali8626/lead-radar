@@ -63,12 +63,19 @@ def main():
 
     key = os.environ.get("GEMINI_API_KEY")
     candidates.sort(key=lambda l: -l["score"])
+    deferred = 0
     if key and candidates:
         scoring.refine_with_ai(candidates, cfg, key)
+        # Without an AI verdict a lead is only a keyword match: hold it back and retry next run.
+        waiting = [l for l in candidates if "ai_reason" not in l]
+        for lead in waiting:
+            seen.pop(lead["id"], None)
+        candidates = [l for l in candidates if "ai_reason" in l]
+        deferred = len(waiting)
     new_leads = [l for l in candidates if l["score"] >= cfg["min_score"]]
     for lead in new_leads:
         lead["snippet"] = lead.pop("body")[:600]
-    print(f"new candidates: {len(candidates)}, kept: {len(new_leads)}, rejected: {rejected}")
+    print(f"new candidates: {len(candidates)}, kept: {len(new_leads)}, waiting for AI: {deferred}, rejected: {rejected}")
 
     old = read_json(LEADS_FILE, {"leads": []})["leads"]
     leads = sorted(new_leads + old, key=lambda l: l["found"], reverse=True)[: cfg["max_leads_kept"]]
@@ -77,7 +84,7 @@ def main():
 
     week_ago = (now - timedelta(days=7)).isoformat()
     write_json(SEEN_FILE, {k: v for k, v in seen.items() if v > week_ago})
-    write_json(STATUS_FILE, {"updated": now.isoformat(), "sources": status, "ai": bool(key)})
+    write_json(STATUS_FILE, {"updated": now.isoformat(), "sources": status, "ai": bool(key), "ai_waiting": deferred})
 
 
 if __name__ == "__main__":

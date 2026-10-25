@@ -111,7 +111,10 @@ def ai_score(lead, model, key):
 
 
 def refine_with_ai(candidates, cfg, key):
-    """Blend Gemini's verdict into the heuristic score. Stops quietly if the free quota runs out."""
+    """Blend Gemini's verdict into the heuristic score; scored leads get an 'ai_reason'.
+
+    Leads that could not be scored (quota, outage, over the per-run cap) are left without
+    'ai_reason' so the caller can retry them on the next run."""
     done = 0
     try:
         model = pick_model(key, cfg["gemini_model"])
@@ -120,10 +123,18 @@ def refine_with_ai(candidates, cfg, key):
         return 0
     print(f"  AI model: {model}")
     for lead in candidates[: cfg["ai_max_per_run"]]:
-        try:
-            verdict = ai_score(lead, model, key)
-        except Exception as exc:  # quota, network, malformed JSON: keep heuristic score
-            print(f"  AI scoring stopped: {exc}")
+        verdict = None
+        for attempt in range(3):
+            try:
+                verdict = ai_score(lead, model, key)
+                break
+            except Exception as exc:
+                print(f"  AI attempt {attempt + 1} failed: {str(exc)[:160]}")
+                if attempt < 2 and re.search(r"HTTP (429|5\d\d)", str(exc)):
+                    time.sleep(10)  # temporary overload, try again
+                else:
+                    break
+        if verdict is None:
             break
         relevance = int(verdict.get("relevance", 0))
         if verdict.get("is_hiring"):
