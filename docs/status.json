@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T13:21:06.530382+00:00",
+ "updated": "2026-10-25T13:29:52.206008+00:00",
  "sources": {
   "Reddit": {
    "ok": false,
@@ -24,7 +24,7 @@
   },
   "Google Alerts": {
    "ok": true,
-   "count": 0
+   "count": 1
   }
  },
  "ai": true,
