@@ -2,6 +2,7 @@
 import json
 import re
 import time
+import urllib.error
 import urllib.request
 
 
@@ -73,6 +74,23 @@ Source: {source}
 Text: {body}"""
 
 
+API = "https://generativelanguage.googleapis.com/v1beta"
+
+
+def pick_model(key, preferred):
+    """Use the configured model if the key can reach it, else the newest plain 'flash' model."""
+    req = urllib.request.Request(f"{API}/models?pageSize=200", headers={"x-goog-api-key": key})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        models = json.loads(resp.read()).get("models", [])
+    names = [m["name"].split("/")[-1] for m in models if "generateContent" in m.get("supportedGenerationMethods", [])]
+    if preferred in names:
+        return preferred
+    flash = [n for n in names if re.fullmatch(r"gemini-[\d.]+-flash", n)]
+    if not flash:
+        raise RuntimeError(f"no usable flash model; key can use: {names[:15]}")
+    return max(flash, key=lambda n: float(re.search(r"gemini-([\d.]+)-flash", n).group(1)))
+
+
 def ai_score(lead, model, key):
     prompt = PROMPT.format(title=lead["title"], source=lead["source"], body=lead["body"][:1500])
     payload = {
@@ -80,21 +98,30 @@ def ai_score(lead, model, key):
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0},
     }
     req = urllib.request.Request(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+        f"{API}/models/{model}:generateContent",
         data=json.dumps(payload).encode(),
         headers={"Content-Type": "application/json", "x-goog-api-key": key},
     )
-    with urllib.request.urlopen(req, timeout=40) as resp:
-        data = json.loads(resp.read())
+    try:
+        with urllib.request.urlopen(req, timeout=40) as resp:
+            data = json.loads(resp.read())
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError(f"HTTP {exc.code} from model {model}: {exc.read()[:300].decode('utf-8', 'replace')}")
     return json.loads(data["candidates"][0]["content"]["parts"][0]["text"])
 
 
 def refine_with_ai(candidates, cfg, key):
     """Blend Gemini's verdict into the heuristic score. Stops quietly if the free quota runs out."""
     done = 0
+    try:
+        model = pick_model(key, cfg["gemini_model"])
+    except Exception as exc:
+        print(f"  AI scoring skipped: {exc}")
+        return 0
+    print(f"  AI model: {model}")
     for lead in candidates[: cfg["ai_max_per_run"]]:
         try:
-            verdict = ai_score(lead, cfg["gemini_model"], key)
+            verdict = ai_score(lead, model, key)
         except Exception as exc:  # quota, network, malformed JSON: keep heuristic score
             print(f"  AI scoring stopped: {exc}")
             break
