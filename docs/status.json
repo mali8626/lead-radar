@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T00:15:41.826494+00:00",
+ "updated": "2026-10-26T04:58:25.086744+00:00",
  "sources": {
   "Reddit": {
    "ok": false,
@@ -16,7 +16,7 @@
   },
   "Hacker News": {
    "ok": true,
-   "count": 166
+   "count": 167
   },
   "HN threads": {
    "ok": true,
@@ -24,9 +24,9 @@
   },
   "Google Alerts": {
    "ok": true,
-   "count": 3
+   "count": 6
   }
  },
  "ai": true,
- "ai_waiting": 1
+ "ai_waiting": 3
 }
