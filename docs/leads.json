@@ -1,3 +1,23 @@
 {
- "leads": []
+ "leads": [
+  {
+   "id": "6c8c709854620fed",
+   "source": "We Work Remotely (Front-end)",
+   "kind": "jobboard",
+   "title": "SimpleTiger: Web Developer: WordPress & HubSpot (U.S. Based, Remote Contractor)",
+   "url": "https://weworkremotely.com/remote-jobs/simpletiger-web-developer-wordpress-hubspot-u-s-based-remote-contractor",
+   "author": "",
+   "posted": "2026-10-28T16:49:37+00:00",
+   "score": 87,
+   "keywords": [
+    "answer engine",
+    "aeo",
+    "page speed",
+    "core web vitals"
+   ],
+   "found": "2026-10-31T02:30:04.608011+00:00",
+   "ai_reason": "Hiring a remote WordPress contractor for client sites, explicitly mentioning SEO and AEO.",
+   "snippet": "Headquarters: Sarasota, FL URL: https://www.simpletiger.com/ SimpleTiger is hiring a part-time contract web developer to build, improve, and troubleshoot client websites in WordPress and HubSpot, with the potential to grow into a larger role. We’re a B2B SaaS marketing agency helping software companies grow through SEO, content marketing, paid media, and answer engine optimization (AEO). Our clients’ websites are where much of that work comes to life, and we’re looking for a developer who can turn ideas into clean, functional pages quickly. As part of our delivery team, you’ll work primarily o"
+  }
+ ]
 }
