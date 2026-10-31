@@ -1,6 +1,25 @@
 {
  "leads": [
   {
+   "id": "bb768b2310d85b5d",
+   "source": "Google Alert 1",
+   "kind": "social",
+   "title": "HSI Corporate Services hiring SEO Specialist – On-Page, Off-Page, AEO & GEO Job in Noida",
+   "url": "https://www.glassdoor.co.in/job-listing/jv?jl=1010311566969",
+   "author": "",
+   "posted": "2026-10-30T13:23:54+00:00",
+   "score": 92,
+   "keywords": [
+    "seo specialist",
+    "aeo",
+    "answer engine",
+    "generative engine"
+   ],
+   "found": "2026-10-31T22:24:54.692021+00:00",
+   "ai_reason": "Job posting hiring an SEO Specialist with AEO and GEO expertise.",
+   "snippet": "We are looking for an experienced, hands-on SEO Specialist to ... Answer Engine Optimization ( AEO ) and Generative Engine Optimization (GEO)."
+  },
+  {
    "id": "6c8c709854620fed",
    "source": "We Work Remotely (Front-end)",
    "kind": "jobboard",
