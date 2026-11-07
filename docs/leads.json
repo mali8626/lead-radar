@@ -1,6 +1,24 @@
 {
  "leads": [
   {
+   "id": "cc7796c31d77e56a",
+   "source": "Google Alert 1",
+   "kind": "social",
+   "title": "AEO / SEO Specialist : Part-Time | Remote | W-2, $75/Hour - Indeed",
+   "url": "https://www.indeed.com/viewjob?jk=973b19051b1d26f0",
+   "author": "",
+   "posted": "2026-11-05T22:34:24+00:00",
+   "score": 90,
+   "keywords": [
+    "aeo",
+    "seo specialist",
+    "answer engine"
+   ],
+   "found": "2026-11-07T06:30:18.944808+00:00",
+   "ai_reason": "Job posting actively seeking to hire an AEO and SEO specialist.",
+   "snippet": "We are looking for an experienced AEO / SEO Specialist to support ongoing client retainers, with a strong focus on Answer Engine Optimization ( AEO ) ..."
+  },
+  {
    "id": "bb768b2310d85b5d",
    "source": "Google Alert 1",
    "kind": "social",
