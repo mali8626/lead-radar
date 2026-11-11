@@ -1,6 +1,23 @@
 {
  "leads": [
   {
+   "id": "64f28d55b563199d",
+   "source": "Google Alert 3",
+   "kind": "social",
+   "title": "WE ARE HIRING ! Join our growing team as a WordPress Developer ! Enjoy a full-time ... - Facebook",
+   "url": "https://www.facebook.com/groups/509617013507726/posts/1855808785555202/",
+   "author": "",
+   "posted": "2026-11-09T16:15:24+00:00",
+   "score": 90,
+   "keywords": [
+    "wordpress developer",
+    "elementor"
+   ],
+   "found": "2026-11-11T10:42:58.658055+00:00",
+   "ai_reason": "Job posting actively seeking a WordPress developer skilled in Elementor and SEO.",
+   "snippet": "... Elementor , Genesis, theme/plugin dev ✓ Strong SEO, performance ... HIRING : WORDPRESS DEVELOPER (PART-TIME) We are looking for a skilled ..."
+  },
+  {
    "id": "6bb813f1c4d279f4",
    "source": "Google Alert 1",
    "kind": "social",
