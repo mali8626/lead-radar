@@ -1,6 +1,119 @@
 {
  "leads": [
   {
+   "id": "f80561901b677116",
+   "source": "Google Alert 1",
+   "kind": "social",
+   "title": "Technical AEO /SEO Specialist - Chicago, Illinois | iHireMarketing",
+   "url": "https://www.ihiremarketing.com/jobs/view/547407214",
+   "author": "",
+   "posted": "2026-11-16T06:38:18+00:00",
+   "score": 83,
+   "keywords": [
+    "aeo",
+    "seo specialist"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Job posting seeking a Technical AEO and SEO specialist.",
+   "snippet": "Hiring Solutions. SMALL BUSINESS Under 500 Employees. LARGE ... What we're looking for . Experience that fits. 2 to 3+ years in technical ..."
+  },
+  {
+   "id": "bc8dbc7ed9026a26",
+   "source": "Google Alert 1",
+   "kind": "social",
+   "title": "AI SEO Specialist at Incubit - Philadelphia | Haystack",
+   "url": "https://haystackapp.io/jobs/d26787a9-fee2-4b85-b116-634f2760cf11",
+   "author": "",
+   "posted": "2026-11-16T20:54:52+00:00",
+   "score": 82,
+   "keywords": [
+    "ai seo"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Job posting hiring an AI SEO specialist.",
+   "snippet": "Hiring platformHands-on hiring PricingCase studies · Start searchingLog in ... What we're looking for : 5+ years of hands-on SEO (technical ..."
+  },
+  {
+   "id": "bede3247a09a74f2",
+   "source": "Google Alert 1",
+   "kind": "social",
+   "title": "SEO & AEO Growth Specialist - RevOps Careers",
+   "url": "https://revopscareers.com/job/crewbloom-seo-aeo-growth-specialist-pakistan/",
+   "author": "",
+   "posted": "2026-11-16T10:52:33+00:00",
+   "score": 85,
+   "keywords": [
+    "aeo"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Job posting seeking an SEO and AEO specialist directly matching target services.",
+   "snippet": "CrewBloom is looking for a data-driven SEO & AEO Specialist who ... Tailor your resume to this exact role — hiring managers notice the difference."
+  },
+  {
+   "id": "f6b00347d1280900",
+   "source": "Google Alert 3",
+   "kind": "social",
+   "title": "WordPress developer needed in Centurion for small business - Facebook",
+   "url": "https://www.facebook.com/groups/pwlicenturion/posts/4422118308099353/",
+   "author": "",
+   "posted": "2026-11-16T07:31:50+00:00",
+   "score": 82,
+   "keywords": [
+    "wordpress developer"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Small business seeking a WordPress developer to fix website issues.",
+   "snippet": "I am looking for a WordPress developer to help me fix a few minor issues on my website. It's for a small business, so I don't need a big professional ..."
+  },
+  {
+   "id": "c31da320224a249c",
+   "source": "Google Alert 4",
+   "kind": "social",
+   "title": "Bilal Ahmad's Post - LinkedIn",
+   "url": "https://www.linkedin.com/posts/bilalflowgrammer_looking-for-an-experienced-seo-expert-for-activity-7528009854024622080-8q1S",
+   "author": "",
+   "posted": "2026-11-16T10:24:40+00:00",
+   "score": 85,
+   "keywords": [
+    "seo expert"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Hiring an experienced SEO expert for a US client project.",
+   "snippet": "Looking for an experienced SEO expert for a US client. The business ... Need someone with proven experience and recent work to show. Please ..."
+  },
+  {
+   "id": "12cf4d8d063e9e65",
+   "source": "Google Alert 1",
+   "kind": "social",
+   "title": "Remote SEO & AEO Specialist job at Human Resource Services company - Remote4Africa",
+   "url": "https://remote4africa.com/jobs/seo-aeo-specialist-1",
+   "author": "",
+   "posted": "2026-11-16T12:37:55+00:00",
+   "score": 85,
+   "keywords": [
+    "aeo"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Job posting seeking a remote SEO and AEO specialist.",
+   "snippet": "Summary Position Type: Full-Time | Remote Working Hours: U.S. Business Hours About the Role We are looking for an SEO & AEO Specialist to manage ..."
+  },
+  {
+   "id": "072a88292e6c4f7b",
+   "source": "Google Alert 3",
+   "kind": "social",
+   "title": "WordPress developer needed to troubleshoot appointment booking software issues",
+   "url": "https://www.facebook.com/groups/980294599118438/posts/2594896494324899/",
+   "author": "",
+   "posted": "2026-11-16T07:58:48+00:00",
+   "score": 82,
+   "keywords": [
+    "wordpress developer"
+   ],
+   "found": "2026-11-17T08:06:23.147740+00:00",
+   "ai_reason": "Client actively seeking a WordPress developer to fix and build a booking system.",
+   "snippet": "NEED HELP!!!!! The client wants 2 services. Service 1: Today only ... Hi, Looking for a WordPress developer . Need to create a booking system ..."
+  },
+  {
    "id": "64f28d55b563199d",
    "source": "Google Alert 3",
    "kind": "social",
