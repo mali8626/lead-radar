@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T21:59:29.998660+00:00",
+ "updated": "2026-11-27T04:06:49.522235+00:00",
  "sources": {
   "Reddit": {
    "ok": false,
@@ -8,7 +8,7 @@
   },
   "RSS job boards": {
    "ok": true,
-   "count": 683
+   "count": 682
   },
   "RemoteOK": {
    "ok": true,
@@ -16,7 +16,7 @@
   },
   "Hacker News": {
    "ok": true,
-   "count": 168
+   "count": 172
   },
   "HN threads": {
    "ok": true,
@@ -24,9 +24,9 @@
   },
   "Google Alerts": {
    "ok": true,
-   "count": 4
+   "count": 8
   }
  },
  "ai": true,
- "ai_waiting": 4
+ "ai_waiting": 6
 }
